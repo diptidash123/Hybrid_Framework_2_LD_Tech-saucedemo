@@ -1,7 +1,6 @@
 package POM;
 import java.io.File;
 import java.io.IOException;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -9,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import generics.ExcelLibrary;
 
 public class Pom_class extends ExcelLibrary
@@ -23,11 +21,11 @@ public class Pom_class extends ExcelLibrary
 	@FindBy(xpath = "(//input[@class=\"input_error form_input\"])[2]")
 	private WebElement password;
 	
-   @FindBy(xpath = "//input[@id=\"login-button\"]")
-   private WebElement loginbutton;
+        @FindBy(xpath = "//input[@id=\"login-button\"]")
+        private WebElement loginbutton;
    
-   @FindBy(xpath = "//button[@class=\"error-button\"]")
-   private WebElement cancelbutton;
+        @FindBy(xpath = "//button[@class=\"error-button\"]")
+        private WebElement cancelbutton;
    
    
    //Initialization
